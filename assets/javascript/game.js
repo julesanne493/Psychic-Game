@@ -24,6 +24,7 @@ guessArr.push(userGuess);
         wins++;
         (guesses = 9);
         alert ("Congratulations! You are psychic. Feel free to keep playing!");
+        (guessArr = []);
     }
 
     else if (userGuess !== computerGuess){
@@ -34,22 +35,39 @@ guessArr.push(userGuess);
         losses++;
         (guesses = 9);
         alert ("Sorry, you're not psychic! Try again.");
+        (guessArr = []);
         
     }
 
-    if (losses == 9) {
-        alert ("You're definitely not psychic. Refresh the page to try again.")
-        return;
-    }
     var html =
-    "<p> You chose: " + event.key + "</p>"+
-    "<p> The computer chose: " + computerGuess + "</p>" +
-    "<p> Wins: " + wins + "</p>" + 
-    "<p> Losses: " + losses + "</p>" +
-    "<p> Guesses: " + guesses + "</p>" +
-    "<p> Letters guessed so far: " + guessArr + "</p>"
+    event.key
+    
+    document.querySelector("#chose").innerHTML = html;
 
-    document.querySelector("#game").innerHTML = html;
+    var html =
+    computerGuess
+
+    document.querySelector("#compchoice").innerHTML = html;
+
+    var html =
+    wins
+
+    document.querySelector("#wins").innerHTML = html;
+
+    var html =
+    losses
+
+    document.querySelector("#losses").innerHTML = html;
+
+    var html =
+    guesses
+
+    document.querySelector("#guesses").innerHTML = html;
+
+    var html =
+    guessArr
+
+    document.querySelector("#guessArr").innerHTML = html;
     
     };
 
