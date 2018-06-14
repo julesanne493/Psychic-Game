@@ -1,3 +1,7 @@
+body {
+    background-image: url(../images/light_grey.png);
+}
+
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
@@ -17,4 +21,9 @@ h2 {
     font-size: 16px;
     text-align: center;
 
+}
+
+img {
+    height: 300px;
+    width: 450px;
 }

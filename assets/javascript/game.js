@@ -14,20 +14,16 @@ var guessArr = [];
 
 document.onkeyup = function (event) {
 
-var userGuess = (event.key).toLowerCase();
+var userGuess = String.fromCharCode(event.keyCode).toLowerCase( );
 
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
 guessArr.push(userGuess);
 
-console.log (wins);
-console.log (losses);
-console.log (guesses);
-console.log (guessArr);
-
     if (userGuess === computerGuess){
         wins++;
         (guesses = 9);
+        alert ("Congratulations! You are psychic. Feel free to keep playing!");
     }
 
     else if (userGuess !== computerGuess){
