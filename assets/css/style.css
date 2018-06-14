@@ -1,0 +1,20 @@
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#game {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+}
